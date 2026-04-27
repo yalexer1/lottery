@@ -8,10 +8,11 @@ from aiogram.filters import Command, CommandObject
 from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-# --- КОНФИГУРАЦИЯ ---
-TOKEN = os.getenv("8718665017:AAEZsiGeEmTeaIkayV6IIw7DiLCSKdv8H7E")  # Замени на свой токен от @BotFather
+# --- НАСТРОЙКИ (ПРОПИСАНЫ НАПРЯМУЮ) ---
+TOKEN = "8718665017:AAEZsiGeEmTeaIkayV6IIw7DiLCSKdv8H7E"
 ADMIN_ID = 7137923579
 CHANNEL_ID = -1003639433974 
+PORT = int(os.environ.get("PORT", 10000))
 
 # ID Премиум Эмодзи
 EMOJI_START = "5424818078833715060"
